@@ -99,7 +99,7 @@ require_brew git-flow
 require_brew gnupg
 # Install GNU `sed`, overwriting the built-in `sed`
 # so we can do "sed -i 's/foo/bar/' file" instead of "sed -i '' 's/foo/bar/' file"
-require_brew gnu-sed --default-names
+require_brew gnu-sed --with-default-names
 # better, more recent grep
 require_brew homebrew/dupes/grep
 require_brew hub
@@ -138,8 +138,8 @@ brew tap caskroom/versions > /dev/null 2>&1
 # cloud storage
 #require_cask amazon-cloud-drive
 require_cask box-sync
-#require_cask dropbox
-#require_cask evernote
+require_cask dropbox
+require_cask evernote
 #require_cask skydrive
 
 # communication
@@ -154,7 +154,7 @@ require_cask github
 require_cask gpgtools
 require_cask ireadfast
 require_cask iterm2
-require_cask lastpass-universal
+#require_cask lastpass-universal
 #require_cask macvim
 require_cask sizeup
 #require_cask simple-comic
