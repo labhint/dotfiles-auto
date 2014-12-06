@@ -68,13 +68,13 @@ require_brew findutils
 
 # Install Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-#install bash
-#install bash-completion
+require_brew bash
+require_brew bash-completion
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-#install ringojs
-#install narwhal
+require_brew ringojs
+require_brew narwhal
 
 # Install other useful binaries
 require_brew ack
@@ -85,7 +85,7 @@ require_brew ack
 # require_brew boot2docker
 # dos2unix converts windows newlines to unix newlines
 require_brew dos2unix
-# require_brew fig
+require_brew fig
 # fortune command--I source this as a better motd :)
 require_brew fortune
 require_brew gawk
@@ -149,13 +149,13 @@ require_cask slack
 # tools
 #require_cask comicbooklover
 require_cask diffmerge
-#require_cask flash-player
+require_cask flash-player
 require_cask github
 require_cask gpgtools
 require_cask ireadfast
 require_cask iterm2
-#require_cask lastpass-universal
-#require_cask macvim
+require_cask lastpass-universal
+require_cask macvim
 require_cask sizeup
 #require_cask simple-comic
 #require_cask sketchup
